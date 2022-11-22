@@ -1,0 +1,109 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!--title and description of survey -->
+    <div id="title-container">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <!-- The container for the survey-->
+    <div id="content-container">
+    <div>
+      <form id="survey-form" action="">
+          <!--Name field -->
+        <div class="section">
+            <label for="name" id="name-label">Name</label><br>
+            <input required type="text" placeholder="Enter your name" id="name">
+            <br>
+        </div>
+         <!--Email field -->
+        <div class="section">
+        <label for="email" id="email-label">Email</label><br>
+        <input required type="email" placeholder="Enter your email" id="email">
+        <br>
+        </div>
+         <!--Age field -->
+        <div class="section">
+        <label for="number" id="number-label">Age(optional)</label><br>
+        <input type="number" placeholder="Age" id="number" min="10" max="99">
+        <br>
+        </div>
+        <!--Current role field -->
+        <div class="section">
+        <label for="dropdown">Which option best describes your current role?</label><br>
+        <select id="dropdown">
+          <option selected disabled>Select current role</option>
+          <option value="student">Student</option>
+          <option value="fulltime">Full time job</option>
+          <option value="learner">Full time learner</option>
+          <option value="prefernot-tosay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        </div>
+        <!--Recommendation field -->
+        <div class="section">
+        <label>Would you recommend freeCodeCamp to a friend?</label><br>
+        <input type="radio" name="recommendation" id="definitely" value="definitely">
+        <label for="definitely">Definitely</label><br>
+        <input type="radio" name="recommendation" id="maybe" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" name="recommendation" id="notsure" value="notsure">
+        <label for="notsure">Not sure</label>
+        <br>
+        </div>
+        <!--Favorite feature field -->
+        <div class="section">
+        <label for="feature">What is your favorite feature of freeCodeCamp?</label><br>
+        <select id="feature">
+          <option selected disabled value="">Select an option</option><!-- why doesn´t this show up in light grey in the field as the page is loaded?-->
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select>
+        <br>
+        </div>
+        <!--Improvement field -->
+        <div class="section">
+        <label>What would you like to see improved? (Check all that apply)</label><br>
+        <input type="checkbox" value="Front-end-Projects" id="front-end" name="improvement">
+        <label for="front-end">Front-end Projects</label><br> <!--how could I vertically align these without using <br> ?-->
+        <input type="checkbox" value="Back-end-Projects" id="back-end" name="improvement">
+        <label for="back-end">Back-end Projects</label><br>
+        <input type="checkbox" value="Data-Visualization" id="data-vis" name="improvement">
+        <label for="data-vis">Data Visualization</label><br>
+        <input type="checkbox" value="Challenges" id="challenges" name="improvement">
+        <label for="challenges">Challenges</label><br>
+        <input type="checkbox" value="Open-Source-Community" id="open-source" name="improvement">
+        <label for="open-source">Open Source Community</label>
+        <br>
+        </div>
+        <!--Comment section -->
+        <div class="section">
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+        <br>
+        </div>
+        <!--Submit button -->
+        <button id="submit">Submit</button>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
